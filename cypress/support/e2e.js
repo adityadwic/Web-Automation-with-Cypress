@@ -17,7 +17,7 @@
 import './commands'
 import 'cy-mobile-commands'
 import "cypress-real-events";
-import 'cypress-if'
+import './commands';
 
 require('cypress-dark')
 require('@cypress/xpath');

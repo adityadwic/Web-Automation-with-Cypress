@@ -18,6 +18,7 @@
     "@testing-library/cypress": "^9.0.0",
     "cy-mobile-commands": "^0.3.0",
     "cypress-dark": "^1.8.3",
+    "cypress-file-upload": "^5.0.8",
     "cypress-if": "^1.10.4",
     "cypress-xpath": "^2.0.1"
   }
