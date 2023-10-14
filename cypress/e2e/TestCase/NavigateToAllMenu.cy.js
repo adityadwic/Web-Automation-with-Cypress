@@ -3,10 +3,10 @@
 describe('Register Testing', () => {
 
     beforeEach(() => { //Loop auth register in every test case
-      cy.visit(Cypress.env("baseUrl-1")) //Using custom command to visit url
+      cy.visit(Cypress.env("baseUrl-1")) //Using environtment variable for Secure URL
     })
   
-    it('Navigate to All menu', () => {
+    it('Login and Navigate to All menu', () => {
         
         //Login with Input username and passsword
         cy.get('[name="username"]').should('be.visible').type(Cypress.env("email-1"))
@@ -48,18 +48,6 @@ describe('Register Testing', () => {
 
         //Navigate to Buzz menu
         cy.xpath('//a/span').contains('Buzz').should('be.visible').click()
-  
-      //Automation to use Numeric & Email Generator. So, every newly created access token will always be different
-    //   cy.get('#email').type(AccesToken.toString() + '@yopmail.com')
-    //   cy.get('#password').type(authUser.deletepassword)
-    //   cy.get('#password_confirmation').type(AccesToken.toString())
-    //   cy.get('#subscribe').click()
-    //   cy.get('#terms').click()
-    //   cy.get("[type='submit']").click()
-    //   cy.contains('The password confirmation does not match.').should('have.text', 'The password confirmation does not match.')
+
     })
-
-
-
-
 })

@@ -25,3 +25,19 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import '@testing-library/cypress/add-commands'
 import 'cypress-file-upload';
+require('cypress-downloadfile/lib/downloadFileCommand')
+
+
+
+//Customize Command
+
+Cypress.Commands.add("login",(username, password)=>{
+
+    //Visit URL
+    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    //Login with General Aproach
+    cy.get('[name="username"]').should('be.visible').type(username)
+    cy.get('[name="password"]').should('be.visible').type(password)
+    cy.get('[type="submit"]').should('be.enabled').click()
+
+})
