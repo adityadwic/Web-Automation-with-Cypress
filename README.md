@@ -102,8 +102,10 @@ The steps below will take you all the way through Cypress. It is assumed you hav
 This project serves as a foundation for testing the login functionality of your web applications using Cypress. Feel free to customize and extend the tests according to your application's specific requirements.
 
 ## Folder Structure ##
-* cypress/integration: Contains Cypress test files.
+* cypress/downloads: Contains Cypress downloaded files.
+* cypress/e2e: Contains Cypress test files.
 * cypress/fixtures: Store fixture files with sample data for tests.
+* cypress/PageObjects: Store Page Object files with sample data for tests.
 * cypress/support: Custom commands and utility functions for testing.
 
 
