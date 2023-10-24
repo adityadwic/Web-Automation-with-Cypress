@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.14.0",
+    "cypress-downloadfile": "^1.2.3",
     "cypress-plugin-steps": "^1.1.1",
     "cypress-real-events": "^1.8.1"
   },
@@ -17,6 +17,7 @@
     "@cypress/xpath": "^2.0.3",
     "@testing-library/cypress": "^9.0.0",
     "cy-mobile-commands": "^0.3.0",
+    "cypress": "^12.17.3",
     "cypress-dark": "^1.8.3",
     "cypress-file-upload": "^5.0.8",
     "cypress-if": "^1.10.4",
